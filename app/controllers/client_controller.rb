@@ -18,6 +18,7 @@ class ClientController < Sinatra::Base
             email: params[:email],
             phone_number: params[:phone_number],
             location: params[:location],
+            developer_id: params[:developer_id],
         )
         @client.to_json
     end
@@ -29,6 +30,7 @@ class ClientController < Sinatra::Base
             email: params[:email],
             phone_number: params[:phone_number],
             location: params[:location],
+            developer_id: params[:developer_id],
         )
         @client.to_json
     end
