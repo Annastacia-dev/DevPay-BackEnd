@@ -10,4 +10,4 @@ use Rack::Cors do
 use Rack::JSONBodyParser
 
 
-run 
+run ApplicationController 

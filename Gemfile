@@ -6,6 +6,8 @@ source "https://rubygems.org"
 
 gem "sinatra", "~> 2.1"
 
+gem "sqlite3"
+
 gem "activerecord", "~> 6.1"
 
 gem "sinatra-activerecord"
