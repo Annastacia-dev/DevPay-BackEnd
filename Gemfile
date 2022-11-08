@@ -26,3 +26,7 @@ group :development do
     gem 'pry'
 
 end
+
+gem "rack", "~> 2.2"
+
+gem "rack-cors", "~> 1.1"
