@@ -5,6 +5,10 @@ require_relative './invoice_controller'
 
 class ApplicationController < Sinatra::Base 
 
+    get '/' do 
+        {message: "Welcome to the Dev-Pay API"}.to_json
+    end
+
     set :default_content_type, 'application/json'
 
     use ClientController
