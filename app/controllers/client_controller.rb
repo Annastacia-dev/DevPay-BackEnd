@@ -13,10 +13,6 @@ class ClientController < Sinatra::Base
         end
 
     post '/clients' do
-        if Client.find_by(email: params([:email]))
-            status 401
-            {message: "Email already exists"}.to_json
-        else
         @client = Client.create(
             name: params[:name],
             email: params[:email],
@@ -24,7 +20,6 @@ class ClientController < Sinatra::Base
             location: params[:location],
         )
         @client.to_json
-        end
     end
 
     patch '/clients/:id' do
