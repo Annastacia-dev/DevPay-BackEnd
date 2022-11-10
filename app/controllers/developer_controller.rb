@@ -4,7 +4,7 @@ class DeveloperController < Sinatra::Base
 
     get '/developers' do
         @developers = Developer.all
-        @developers.to_json
+        @developers.to_json(include: [:clients, :invoices, :services])
     end
 
     get '/developers/:email' do 
