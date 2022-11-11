@@ -40,7 +40,6 @@ Creates a new client. The request body should be a JSON object with the followin
 * `email` - The email of the client - string (required)
 * `location` - The location of the client - string
 * `phone_number` - The phone number of the client - integer
-* `developer_id` - The id of the developer - integer (required)
 
 #### PATCH /clients/:id
 Updates an existing client. The request body should be a JSON object with the following keys:
@@ -48,7 +47,7 @@ Updates an existing client. The request body should be a JSON object with the fo
 * `email` - The email of the client - string (required)
 * `location` - The location of the client - string
 * `phone_number` - The phone number of the client - integer
-* `developer_id` - The id of the developer - integer (required)
+
 
 #### DELETE /clients/:id
 Deletes an existing client.
